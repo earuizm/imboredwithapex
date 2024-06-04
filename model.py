@@ -34,7 +34,7 @@ def predict_kills(player_name, kills_maps_1_4, kills_maps_5_6):
     else:
         return None  # Return None if model for the player doesn't exist
 
-# Example usage
+# Example usage - just pass in the name and the kills, rn it doesnt matter it just tells u how many kills it thinks its gonna have lol
 def main():
     args = parse_arguments()
     player_name = args.player_name
