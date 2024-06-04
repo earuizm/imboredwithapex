@@ -20,8 +20,8 @@ models = {}
 for player_name in data['Player Name'].unique():
     player_data = data[data['Player Name'] == player_name]
     X = player_data[['Kills (Maps 1-4)', 'Kills (Maps 5-6)']]
-    y = player_data['Kills (Maps 1-4)']  # Adjust the target variable as needed
-    model = RandomForestRegressor()  # You can use any regression model here
+    y = player_data['Kills (Maps 1-4)']  
+    model = RandomForestRegressor()  #this is actually basic so idk
     model.fit(X, y)
     models[player_name] = model
 
