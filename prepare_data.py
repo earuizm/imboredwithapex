@@ -76,7 +76,7 @@ def main():
         writer = csv.writer(csvfile)
         writer.writerow(agg_header)  # Write the header
         for player_name, kills in player_kills.items():
-            writer.writerow([player_name, kills[0], kills[1]])  # Write the aggregated data for each player
+            writer.writerow([player_name, kills[0], kills[1]])  # Write the aggregated data for each player need it for the model 
     
     print("Aggregated data has been written to:", output_file)
 
