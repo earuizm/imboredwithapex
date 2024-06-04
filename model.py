@@ -11,10 +11,10 @@ def parse_arguments():
     return parser.parse_args()
 
 # Step 1: Load and prepare data
-data = pd.read_csv('aggregated_output.csv')  # Replace 'your_data.csv' with the path to your data file
+data = pd.read_csv('aggregated_output.csv')  
 
 # Step 2: Model Training
-models = {}  # Dictionary to store models for each player
+models = {}  
 
 # Train a separate model for each player
 for player_name in data['Player Name'].unique():
